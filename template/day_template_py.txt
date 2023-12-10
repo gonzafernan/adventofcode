@@ -1,0 +1,28 @@
+"""
+Advent of Code // {YEAR}
+--- Day {DAY}: {CHALLENGE_TITLE} ---
+"""
+
+
+def read_input(file_path: str):
+    """Read challenge input"""
+    with open(file=file_path, mode="r", encoding="utf-8") as input_file:
+        input_lines = input_file.readlines()
+    return input_lines
+
+
+def day{DAY}_part1(file_path: str):
+    """Day {DAY} part 1 solution"""
+    input_lines = read_input(file_path=file_path)
+    print(input_lines)
+
+
+def day{DAY}_part2(file_path: str):
+    """Day {DAY} part 2 solution"""
+    input_lines = read_input(file_path=file_path)
+    print(input_lines)
+
+
+if __name__ == "__main__":
+    day{DAY}_part1(file_path="input_file.txt")
+    # day{DAY}_part2(file_path="input_file.txt")
