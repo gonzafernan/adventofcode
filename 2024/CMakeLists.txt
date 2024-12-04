@@ -4,9 +4,16 @@ project(adventofcode, LANGUAGES CXX)
 
 add_executable(adventofcode)
 
+target_include_directories(adventofcode
+    PRIVATE
+        include
+)
+
 target_sources(adventofcode
     PRIVATE
         main.cpp
+        src/day1.cpp
+        src/day3.cpp
 )
 
 set_target_properties(adventofcode
