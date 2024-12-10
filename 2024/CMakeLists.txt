@@ -2,6 +2,8 @@
 cmake_minimum_required(VERSION 3.28)
 project(adventofcode, LANGUAGES CXX)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_executable(adventofcode)
 
 target_include_directories(adventofcode
@@ -9,11 +11,12 @@ target_include_directories(adventofcode
         include
 )
 
+file(GLOB SOURCES "src/*.cpp")
+
 target_sources(adventofcode
     PRIVATE
         main.cpp
-        src/day1.cpp
-        src/day3.cpp
+        ${SOURCES}
 )
 
 set_target_properties(adventofcode
