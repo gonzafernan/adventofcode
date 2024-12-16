@@ -130,28 +130,27 @@ int perform_word_search_part2(vector<vector<shared_ptr<LetterNode>>> &word_searc
     return word_count;
 }
 
-int day4(void) {
-    ifstream input_file;
+int day4(string input_file) {
+    ifstream input_file_stream;
     string line;
     vector<vector<shared_ptr<LetterNode>>> word_search;
     int word_count;
 
-    // input_file.open("day4-input-example.txt");
-    input_file.open("day4-input.txt");
-    if (!input_file.is_open()) {
+    input_file_stream.open(input_file);
+    if (!input_file_stream.is_open()) {
         cout << "Couldn't open input file" << endl;
         return -1;
     }
 
     int row_idx = 0;
-    while (getline(input_file, line)) {
+    while (getline(input_file_stream, line)) {
         word_search.emplace_back();
         for (auto [col_idx, letter] : views::enumerate(line)) {
             word_search[row_idx].push_back(make_shared<LetterNode>(LetterNode(letter)));
         }
         row_idx++;
     }
-    input_file.close();
+    input_file_stream.close();
 
     cout << "Row size: " << word_search.size() << endl;
     cout << "Column size: " << word_search[0].size() << endl;
