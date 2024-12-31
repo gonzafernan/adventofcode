@@ -11,7 +11,7 @@ using namespace std;
 
 #define EXPECTED_ARGS 3
 
-int (*day_table[24])(string) = {day1,  day2,    day3,    day4,    day5,    day6,    nullptr, nullptr, nullptr,
+int (*day_table[24])(string) = {day1,  day2,    day3,    day4,    day5,    day6,    nullptr, day8,    nullptr,
                                 day10, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr};
 
 int main(int argc, char *argv[]) {
