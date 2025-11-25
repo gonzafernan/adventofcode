@@ -1,0 +1,15 @@
+{
+    "name": "Base DevContainer",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+
+    "features": {
+        "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {},
+    },
+    "remoteUser": "root",
+    "mounts": [
+        "source=${localEnv:HOME}/.config/nvim,target=/root/.config/nvim,type=bind",
+        "type=volume,target=/root/.local/share/nvim",
+        "type=volume,target=/root/.cache/nvim",
+    ]
+}
