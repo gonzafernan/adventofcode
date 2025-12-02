@@ -6,7 +6,7 @@
     "features": {
         "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {},
     },
-    "remoteUser": "root",
+    "remoteUser": "dev",
     "mounts": [
         "source=${localEnv:HOME}/.config/nvim,target=/root/.config/nvim,type=bind",
         "type=volume,target=/root/.local/share/nvim",
