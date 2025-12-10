@@ -8,8 +8,6 @@
     },
     "remoteUser": "dev",
     "mounts": [
-        "source=${localEnv:HOME}/.config/nvim,target=/root/.config/nvim,type=bind",
-        "type=volume,target=/root/.local/share/nvim",
-        "type=volume,target=/root/.cache/nvim",
+        "source=${localEnv:HOME}/.config/nvim,target=/home/dev/.config/nvim,type=bind",
     ]
 }
