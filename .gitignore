@@ -1,3 +1,4 @@
 *input*.txt
 */build/
 .cache/
+.nvimlog
