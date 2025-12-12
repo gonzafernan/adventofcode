@@ -1,5 +1,5 @@
 defmodule Aoc25.Day3Test do
-  use ExUnit.Case, asunc: true
+  use ExUnit.Case, async: true
 
   test "day 3 part 1 example" do
     assert Path.join("input", "day3_example.txt")

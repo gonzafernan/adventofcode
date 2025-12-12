@@ -1,5 +1,5 @@
 defmodule Aoc25.Day1Test do
-  use ExUnit.Case, asunc: true
+  use ExUnit.Case, async: true
 
   test "day 1 parse instruction" do
     assert Aoc25Day1.parse_instruction("R8") == 8

@@ -1,5 +1,5 @@
 defmodule Aoc25.Day2Test do
-  use ExUnit.Case, asunc: true
+  use ExUnit.Case, async: true
 
   test "day 2 parse ranges" do
     assert Aoc25Day2.get_ranges("11-22,95-115") == [11..22, 95..115]
