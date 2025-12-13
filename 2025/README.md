@@ -1,4 +1,4 @@
-# Aoc25
+# Advent of Code 2025
 
 **TODO: Add description**
 

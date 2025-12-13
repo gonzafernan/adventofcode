@@ -1,4 +1,8 @@
 defmodule Aoc25Day2 do
+  @moduledoc """
+  Provides functions to solve [Advent of Code 2025 Day 2](https://adventofcode.com/2025/day/2).
+  """
+
   def get_ranges(input_stream) do
     String.split(input_stream, ",", trim: true)
     |> Enum.map(fn x ->
@@ -52,15 +56,3 @@ defmodule Aoc25Day2 do
     |> Enum.sum()
   end
 end
-
-Path.join("input", "day2.txt")
-|> File.read!()
-|> String.trim_trailing("\n")
-|> Aoc25Day2.get_invalid_sum(&Aoc25Day2.is_valid1?/1)
-|> IO.puts()
-
-Path.join("input", "day2.txt")
-|> File.read!()
-|> String.trim_trailing("\n")
-|> Aoc25Day2.get_invalid_sum(&Aoc25Day2.is_valid2?/1)
-|> IO.puts()

@@ -1,4 +1,8 @@
 defmodule Aoc25Day1 do
+  @moduledoc """
+  Provides functions to solve [Advent of Code 2025 Day 1](https://adventofcode.com/2025/day/1).
+  """
+
   def parse_instruction(<<direction, value::binary>>) do
     case direction do
       ?L ->
@@ -44,15 +48,3 @@ defmodule Aoc25Day1 do
     end)
   end
 end
-
-Path.join("input", "day1.txt")
-|> File.read!()
-|> String.split("\n", trim: true)
-|> Aoc25Day1.get_password1()
-|> IO.puts()
-
-Path.join("input", "day1.txt")
-|> File.read!()
-|> String.split("\n", trim: true)
-|> Aoc25Day1.get_password2()
-|> IO.puts()

@@ -1,9 +1,16 @@
 defmodule GridNode do
+  @moduledoc """
+  Data structure definition for grid node representation.
+  """
   @enforce_keys [:position]
   defstruct position: {-1, -1}, adjacents: []
 end
 
 defmodule Aoc25Day4 do
+  @moduledoc """
+  Provides functions to solve [Advent of Code 2025 Day 4](https://adventofcode.com/2025/day/4).
+  """
+
   def is_adjacent?(node_a, node_b) do
     {%GridNode{position: {x1, y1}, adjacents: _}, %GridNode{position: {x2, y2}, adjacents: _}} =
       {node_a, node_b}
